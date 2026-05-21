@@ -105,8 +105,17 @@ export default function TravelAgencyWebsite() {
               </p>
 
               <div className="bg-gray-100 px-5 py-3 rounded-xl text-sm font-mono text-gray-700 overflow-x-auto max-w-full">
-                {`<!-- TOURVISOR WIDGET CODE HERE -->`}
-              </div>
+
+  <div
+  dangerouslySetInnerHTML={{
+    __html: `
+      <div class="tv-search-form tv-moduleid-9977498"></div>
+      <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+    `,
+  }}
+/>
+
+</div>
             </div>
           </div>
         </div>

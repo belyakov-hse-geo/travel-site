@@ -307,7 +307,7 @@ export default function TravelAgencyWebsite() {
     <div className="mb-14">
 
       <p className="text-blue-600 font-semibold mb-2">
-        PRIVATE EXPERIENCES
+        ИНТЕРЕСНЫЕ НАПРАВЛЕНИЯ
       </p>
 
       <h3 className="text-5xl font-bold">
@@ -320,28 +320,41 @@ export default function TravelAgencyWebsite() {
 
       {/* EUROPE */}
 
-      <div className="relative rounded-3xl overflow-hidden h-[500px] group">
+      <div className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
 
-        <img
-          src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=1200&auto=format&fit=crop"
-          className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-        />
+        <div className="h-80 overflow-hidden relative">
 
-        <div className="absolute inset-0 bg-black/45"></div>
+          <img
+            src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=1200&auto=format&fit=crop"
+            alt="Europe"
+            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+          />
 
-        <div className="absolute bottom-0 p-8 text-white">
+          <div className="absolute inset-0 bg-black/20"></div>
 
-          <p className="uppercase text-sm tracking-[4px] mb-3">
-            EUROPE
-          </p>
+        </div>
 
-          <h4 className="text-4xl font-bold mb-4">
+        <div className="p-7">
+
+          <h4 className="text-3xl font-bold mb-5">
             Европа
           </h4>
 
-          <p className="opacity-90 mb-6">
+          <p className="text-gray-600 mb-7 leading-relaxed">
             Италия, Франция, Швейцария и лучшие маршруты Европы.
           </p>
+
+          <a
+            href="https://t.me/slavatrips"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
+              Подобрать маршрут
+            </button>
+
+          </a>
 
         </div>
 
@@ -349,28 +362,41 @@ export default function TravelAgencyWebsite() {
 
       {/* OCEANIA */}
 
-      <div className="relative rounded-3xl overflow-hidden h-[500px] group">
+      <div className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
 
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
-          className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-        />
+        <div className="h-80 overflow-hidden relative">
 
-        <div className="absolute inset-0 bg-black/45"></div>
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+            alt="Oceania"
+            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+          />
 
-        <div className="absolute bottom-0 p-8 text-white">
+          <div className="absolute inset-0 bg-black/20"></div>
 
-          <p className="uppercase text-sm tracking-[4px] mb-3">
-            OCEANIA
-          </p>
+        </div>
 
-          <h4 className="text-4xl font-bold mb-4">
+        <div className="p-7">
+
+          <h4 className="text-3xl font-bold mb-5">
             Океания
           </h4>
 
-          <p className="opacity-90 mb-6">
+          <p className="text-gray-600 mb-7 leading-relaxed">
             Бали, Фиджи и райские острова Тихого океана.
           </p>
+
+          <a
+            href="https://t.me/slavatrips"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
+              Подобрать маршрут
+            </button>
+
+          </a>
 
         </div>
 
@@ -378,28 +404,41 @@ export default function TravelAgencyWebsite() {
 
       {/* CHINA */}
 
-      <div className="relative rounded-3xl overflow-hidden h-[500px] group">
+      <div className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
 
-        <img
-          src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop"
-          className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-        />
+        <div className="h-80 overflow-hidden relative">
 
-        <div className="absolute inset-0 bg-black/45"></div>
+          <img
+            src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop"
+            alt="China"
+            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+          />
 
-        <div className="absolute bottom-0 p-8 text-white">
+          <div className="absolute inset-0 bg-black/20"></div>
 
-          <p className="uppercase text-sm tracking-[4px] mb-3">
-            CHINA & ASIA
-          </p>
+        </div>
 
-          <h4 className="text-4xl font-bold mb-4">
+        <div className="p-7">
+
+          <h4 className="text-3xl font-bold mb-5">
             Китай
           </h4>
 
-          <p className="opacity-90 mb-6">
+          <p className="text-gray-600 mb-7 leading-relaxed">
             Шанхай, Пекин и эксклюзивные маршруты по Азии.
           </p>
+
+          <a
+            href="https://t.me/slavatrips"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
+              Подобрать маршрут
+            </button>
+
+          </a>
 
         </div>
 

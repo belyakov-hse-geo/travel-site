@@ -334,15 +334,19 @@ export default function TravelAgencyWebsite() {
 
         </div>
 
-        <div className="p-7">
+        <div className="p-7 flex flex-col h-[260px]">
 
-          <h4 className="text-3xl font-bold mb-2">
-  Европа
-</h4>
+          <div className="flex justify-between items-center mb-5">
 
-<div className="text-blue-600 font-bold text-lg mb-4">
-  от 120.000₽
-</div>
+            <h4 className="text-3xl font-bold">
+              Европа
+            </h4>
+
+            <span className="text-blue-600 font-bold text-lg">
+              от 120.000₽
+            </span>
+
+          </div>
 
           <p className="text-gray-600 mb-7 leading-relaxed">
             Италия, Франция, Швейцария и лучшие маршруты Европы.
@@ -352,6 +356,7 @@ export default function TravelAgencyWebsite() {
             href="https://t.me/slavatrips"
             target="_blank"
             rel="noopener noreferrer"
+            className="mt-auto"
           >
 
             <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
@@ -380,17 +385,19 @@ export default function TravelAgencyWebsite() {
 
         </div>
 
-        <div className="p-7">
+        <div className="p-7 flex flex-col h-[260px]">
 
-          <h4 className="text-3xl font-bold mb-5">
-            Океания
-          </h4>
+          <div className="flex justify-between items-center mb-5">
 
-          <div className="text-blue-600 font-bold text-lg mb-4">
+            <h4 className="text-3xl font-bold">
+              Океания
+            </h4>
 
-  от 180.000₽
+            <span className="text-blue-600 font-bold text-lg">
+              от 180.000₽
+            </span>
 
-</div>
+          </div>
 
           <p className="text-gray-600 mb-7 leading-relaxed">
             Бали, Фиджи и райские острова Тихого океана.
@@ -400,6 +407,7 @@ export default function TravelAgencyWebsite() {
             href="https://t.me/slavatrips"
             target="_blank"
             rel="noopener noreferrer"
+            className="mt-auto"
           >
 
             <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
@@ -428,14 +436,20 @@ export default function TravelAgencyWebsite() {
 
         </div>
 
-        <div className="p-7">
+        <div className="p-7 flex flex-col h-[260px]">
 
-          <h4 className="text-3xl font-bold mb-5">
-            Китай
-          </h4>
-          <div className="text-blue-600 font-bold text-lg mb-4">
-  от 95.000₽
-</div>
+          <div className="flex justify-between items-center mb-5">
+
+            <h4 className="text-3xl font-bold">
+              Китай
+            </h4>
+
+            <span className="text-blue-600 font-bold text-lg">
+              от 95.000₽
+            </span>
+
+          </div>
+
           <p className="text-gray-600 mb-7 leading-relaxed">
             Шанхай, Пекин и эксклюзивные маршруты по Азии.
           </p>
@@ -444,6 +458,7 @@ export default function TravelAgencyWebsite() {
             href="https://t.me/slavatrips"
             target="_blank"
             rel="noopener noreferrer"
+            className="mt-auto"
           >
 
             <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
@@ -580,15 +595,17 @@ export default function TravelAgencyWebsite() {
         {/* MAX */}
 
         <a
-          href="https://max.ru"
+          href="https://max.ru/u/f9LHodD0cOJnM8N8YPxJckfustxtnJExipYZYwNx6Ovve1t9hTY3GYMyXkE"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center"
         >
 
-          <span className="text-white font-bold text-sm">
-            MAX
-          </span>
+          <img
+  src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Max_logo.svg"
+  alt="MAX"
+  className="w-7 h-7 object-contain"
+/>
 
         </a>
 

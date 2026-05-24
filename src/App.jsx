@@ -229,7 +229,7 @@ export default function TravelAgencyWebsite() {
             </p>
 
             <h3 className="text-5xl font-bold">
-              Горящие туры
+              Индивидуальные туры
             </h3>
 
           </div>
@@ -336,9 +336,13 @@ export default function TravelAgencyWebsite() {
 
         <div className="p-7">
 
-          <h4 className="text-3xl font-bold mb-5">
-            Европа
-          </h4>
+          <h4 className="text-3xl font-bold mb-2">
+  Европа
+</h4>
+
+<div className="text-blue-600 font-bold text-lg mb-4">
+  от 120.000₽
+</div>
 
           <p className="text-gray-600 mb-7 leading-relaxed">
             Италия, Франция, Швейцария и лучшие маршруты Европы.
@@ -382,6 +386,12 @@ export default function TravelAgencyWebsite() {
             Океания
           </h4>
 
+          <div className="text-blue-600 font-bold text-lg mb-4">
+
+  от 180.000₽
+
+</div>
+
           <p className="text-gray-600 mb-7 leading-relaxed">
             Бали, Фиджи и райские острова Тихого океана.
           </p>
@@ -423,7 +433,9 @@ export default function TravelAgencyWebsite() {
           <h4 className="text-3xl font-bold mb-5">
             Китай
           </h4>
-
+          <div className="text-blue-600 font-bold text-lg mb-4">
+  от 95.000₽
+</div>
           <p className="text-gray-600 mb-7 leading-relaxed">
             Шанхай, Пекин и эксклюзивные маршруты по Азии.
           </p>

@@ -1,14 +1,6 @@
-import { useEffect } from "react";
 import { Send, Instagram } from "lucide-react";
 
 export default function TravelAgencyWebsite() {
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//tourvisor.ru/module/init.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
 
   const tours = [
     {
@@ -181,9 +173,40 @@ export default function TravelAgencyWebsite() {
 
           <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
 
-            <div className="rounded-2xl overflow-hidden">
+            <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-3xl p-12 text-white text-center">
 
-              <div className="tv-search-form tv-moduleid-9977498"></div>
+              <p className="uppercase tracking-[4px] text-sm opacity-80 mb-4">
+                TOUR SEARCH MODULE
+              </p>
+
+              <h4 className="text-4xl font-bold mb-6">
+                Онлайн поиск туров
+              </h4>
+
+              <p className="max-w-2xl mx-auto text-lg opacity-90 mb-8">
+                Здесь будет подключён профессиональный модуль поиска туров
+                с актуальными ценами, отелями и онлайн-бронированием.
+              </p>
+
+              <div className="flex flex-wrap justify-center gap-4">
+
+                <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl">
+                  Турция
+                </div>
+
+                <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl">
+                  Мальдивы
+                </div>
+
+                <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl">
+                  Дубай
+                </div>
+
+                <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl">
+                  Таиланд
+                </div>
+
+              </div>
 
             </div>
 

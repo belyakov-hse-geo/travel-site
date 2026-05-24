@@ -5,21 +5,21 @@ export default function TravelAgencyWebsite() {
   const tours = [
     {
       country: "Турция",
-      price: "от €420",
+      price: "от 39.000₽",
       image:
         "https://images.unsplash.com/photo-1527838832700-5059252407fa?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
       country: "Мальдивы",
-      price: "от €1490",
+      price: "от 89.000₽",
       image:
         "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=1200&auto=format&fit=crop",
     },
 
     {
       country: "Дубай",
-      price: "от €990",
+      price: "от 47.000₽",
       image:
         "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
     },
@@ -132,7 +132,7 @@ export default function TravelAgencyWebsite() {
             </a>
 
             <a
-              href="https://t.me/slavatrips1"
+              href="https://t.me/slavatrips"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -225,7 +225,7 @@ export default function TravelAgencyWebsite() {
           <div className="mb-14">
 
             <p className="text-blue-600 font-semibold mb-2">
-              POPULAR DESTINATIONS
+              ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ
             </p>
 
             <h3 className="text-5xl font-bold">
@@ -275,7 +275,7 @@ export default function TravelAgencyWebsite() {
                   </p>
 
                   <a
-                    href="https://t.me/slavatrips1"
+                    href="https://t.me/slavatrips"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -414,7 +414,7 @@ export default function TravelAgencyWebsite() {
             <div className="space-y-4 text-gray-400">
 
               <a
-                href="https://t.me/slavatrips1"
+                href="https://t.me/slavatrips"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-white transition"
@@ -426,7 +426,7 @@ export default function TravelAgencyWebsite() {
               </a>
 
               <a
-                href="https://instagram.com/slavatrips1"
+                href="https://instagram.com/slavatrips"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-white transition"

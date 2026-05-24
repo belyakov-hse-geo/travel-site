@@ -1,4 +1,4 @@
-import { FaTelegramPlane, FaInstagram } from "react-icons/fa";
+
 
 export default function TravelAgencyWebsite() {
 
@@ -592,50 +592,58 @@ export default function TravelAgencyWebsite() {
 
       <div className="flex gap-4 mt-6">
 
-        {/* MAX */}
+  {/* MAX */}
 
-        <a
-  href="https://max.ru/u/f9LHodD0cOJnM8N8YPxJckfustxtnJExipYZYwNx6Ovve1t9hTY3GYMyXkE"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center overflow-hidden"
->
+  <a
+    href="https://max.ru/u/f9LHodD0cOJnM8N8YPxJckfustxtnJExipYZYwNx6Ovve1t9hTY3GYMyXkE"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-blue-600 transition flex items-center justify-center overflow-hidden"
+  >
 
-  <img
-    src="/Max_logo_2026.png"
-    alt="MAX"
-    className="w-8 h-8 object-contain"
-  />
+    <img
+      src="/Max_logo_2026.png"
+      alt="MAX"
+      className="w-9 h-9 object-contain"
+    />
 
-</a>
+  </a>
 
-        {/* TELEGRAM */}
+  {/* TELEGRAM */}
 
-        <a
-          href="https://t.me/slavatrips"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center"
-        >
+  <a
+    href="https://t.me/slavatrips"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-blue-600 transition flex items-center justify-center overflow-hidden"
+  >
 
-          <FaTelegramPlane className="text-white text-2xl" />
+    <img
+      src="/Telegram_Messenger.png"
+      alt="Telegram"
+      className="w-8 h-8 object-contain"
+    />
 
-        </a>
+  </a>
 
-        {/* INSTAGRAM */}
+  {/* INSTAGRAM */}
 
-        <a
-          href="https://instagram.com/slavatrips"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center"
-        >
+  <a
+    href="https://instagram.com/slavatrips"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-pink-600 transition flex items-center justify-center overflow-hidden"
+  >
 
-          <FaInstagram className="text-white text-2xl" />
+    <img
+      src="/Instagram_icon.png"
+      alt="Instagram"
+      className="w-8 h-8 object-contain"
+    />
 
-        </a>
+  </a>
 
-      </div>
+</div>
 
     </div>
 

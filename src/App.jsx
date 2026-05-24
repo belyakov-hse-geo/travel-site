@@ -595,19 +595,19 @@ export default function TravelAgencyWebsite() {
         {/* MAX */}
 
         <a
-          href="https://max.ru/u/f9LHodD0cOJnM8N8YPxJckfustxtnJExipYZYwNx6Ovve1t9hTY3GYMyXkE"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center"
-        >
+  href="https://max.ru/u/f9LHodD0cOJnM8N8YPxJckfustxtnJExipYZYwNx6Ovve1t9hTY3GYMyXkE"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center overflow-hidden"
+>
 
-          <img
-  src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Max_logo.svg"
-  alt="MAX"
-  className="w-7 h-7 object-contain"
-/>
+  <img
+    src="/Max_logo_2026.png"
+    alt="MAX"
+    className="w-8 h-8 object-contain"
+  />
 
-        </a>
+</a>
 
         {/* TELEGRAM */}
 

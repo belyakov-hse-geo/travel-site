@@ -1,6 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function TravelAgencyWebsite() {
+  useEffect(() => {
+  const script = document.createElement("script");
+  script.src = "//tourvisor.ru/module/init.js";
+  script.async = true;
+
+  document.body.appendChild(script);
+
+  return () => {
+    document.body.removeChild(script);
+  };
+}, []);
 
   const [openModal, setOpenModal] = useState(false);
 
@@ -148,70 +159,40 @@ export default function TravelAgencyWebsite() {
 
       {/* SEARCH */}
 
-      <section id="search" className="py-20 md:py-24 bg-gray-50 px-4 md:px-6">
+<section
+  id="search"
+  className="py-20 md:py-24 bg-gray-50 px-4 md:px-6"
+>
 
-        <div className="max-w-6xl mx-auto">
+  <div className="max-w-6xl mx-auto">
 
-          <div className="text-center mb-14">
+    <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl">
 
-            <p className="text-blue-600 font-semibold mb-3">
-              ONLINE BOOKING
-            </p>
+      <p className="uppercase tracking-[4px] text-sm opacity-80 mb-4">
+        TOUR SEARCH MODULE
+      </p>
 
-            <h3 className="text-4xl md:text-5xl font-bold mb-4">
-              Поиск туров
-            </h3>
+      <h3 className="text-4xl md:text-5xl font-bold mb-6">
+        Онлайн поиск туров
+      </h3>
 
-            <p className="text-gray-600 text-base md:text-lg">
-              Найдите лучшие предложения онлайн
-            </p>
+      <p className="max-w-2xl mx-auto text-base md:text-lg opacity-90 mb-10">
+        Найдите лучшие предложения онлайн через Tourvisor.
+      </p>
 
-          </div>
+      <div className="bg-white rounded-3xl overflow-hidden shadow-2xl p-2 md:p-4">
 
-          <div className="bg-white rounded-3xl shadow-2xl p-4 md:p-8 border border-gray-100">
+        <div
+          className="tv-search-form tv-moduleid-9977548"
+        ></div>
 
-            <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-3xl p-8 md:p-12 text-white text-center">
+      </div>
 
-              <p className="uppercase tracking-[4px] text-sm opacity-80 mb-4">
-                TOUR SEARCH MODULE
-              </p>
+    </div>
 
-              <h4 className="text-3xl md:text-4xl font-bold mb-6">
-                Онлайн поиск туров
-              </h4>
+  </div>
 
-              <p className="max-w-2xl mx-auto text-base md:text-lg opacity-90 mb-8">
-                Здесь будет подключён профессиональный модуль поиска туров
-                с актуальными ценами, отелями и онлайн-бронированием.
-              </p>
-
-              <div className="flex flex-wrap justify-center gap-4">
-
-                <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl">
-                  Турция
-                </div>
-
-                <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl">
-                  Мальдивы
-                </div>
-
-                <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl">
-                  Дубай
-                </div>
-
-                <div className="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl">
-                  Таиланд
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
+</section>
 
       {/* TOURS */}
 
@@ -625,7 +606,7 @@ export default function TravelAgencyWebsite() {
         {/* INSTAGRAM */}
 
         <a
-          href="https://instagram.com/slavatrips"
+          href="https://www.instagram.com/slava.trips?igsh=MWZ6eG1yZmJqMTRwdA%3D%3D&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-pink-600 transition flex items-center justify-center overflow-hidden"
@@ -681,7 +662,7 @@ export default function TravelAgencyWebsite() {
         </a>
 
         <a
-          href="https://instagram.com/slavatrips"
+          href="https://www.instagram.com/slava.trips?igsh=MWZ6eG1yZmJqMTRwdA%3D%3D&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-pink-500 to-orange-400 text-white py-4 rounded-2xl text-center font-semibold transition"

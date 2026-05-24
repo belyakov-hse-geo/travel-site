@@ -298,7 +298,120 @@ export default function TravelAgencyWebsite() {
 
       </section>
 
-      {/* ABOUT */}
+{/* CUSTOM TOURS */}
+
+<section className="py-24 px-6 bg-gray-50">
+
+  <div className="max-w-7xl mx-auto">
+
+    <div className="mb-14">
+
+      <p className="text-blue-600 font-semibold mb-2">
+        PRIVATE EXPERIENCES
+      </p>
+
+      <h3 className="text-5xl font-bold">
+        Индивидуальные путешествия
+      </h3>
+
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {/* EUROPE */}
+
+      <div className="relative rounded-3xl overflow-hidden h-[500px] group">
+
+        <img
+          src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=1200&auto=format&fit=crop"
+          className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-black/45"></div>
+
+        <div className="absolute bottom-0 p-8 text-white">
+
+          <p className="uppercase text-sm tracking-[4px] mb-3">
+            EUROPE
+          </p>
+
+          <h4 className="text-4xl font-bold mb-4">
+            Европа
+          </h4>
+
+          <p className="opacity-90 mb-6">
+            Италия, Франция, Швейцария и лучшие маршруты Европы.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* OCEANIA */}
+
+      <div className="relative rounded-3xl overflow-hidden h-[500px] group">
+
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+          className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-black/45"></div>
+
+        <div className="absolute bottom-0 p-8 text-white">
+
+          <p className="uppercase text-sm tracking-[4px] mb-3">
+            OCEANIA
+          </p>
+
+          <h4 className="text-4xl font-bold mb-4">
+            Океания
+          </h4>
+
+          <p className="opacity-90 mb-6">
+            Бали, Фиджи и райские острова Тихого океана.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* CHINA */}
+
+      <div className="relative rounded-3xl overflow-hidden h-[500px] group">
+
+        <img
+          src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop"
+          className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-black/45"></div>
+
+        <div className="absolute bottom-0 p-8 text-white">
+
+          <p className="uppercase text-sm tracking-[4px] mb-3">
+            CHINA & ASIA
+          </p>
+
+          <h4 className="text-4xl font-bold mb-4">
+            Китай
+          </h4>
+
+          <p className="opacity-90 mb-6">
+            Шанхай, Пекин и эксклюзивные маршруты по Азии.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ABOUT */}
 
       <section id="about" className="py-24 px-6 bg-gray-50">
 
@@ -426,7 +539,7 @@ export default function TravelAgencyWebsite() {
               </a>
 
               <a
-                href="https://instagram.com/slavatrips"
+                href="https://instagram.com/slavatrips1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-white transition"

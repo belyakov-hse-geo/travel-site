@@ -177,7 +177,7 @@ export default function TravelAgencyWebsite() {
       </h3>
 
       <p className="max-w-2xl mx-auto text-base md:text-lg opacity-90 mb-10">
-        Найдите лучшие предложения онлайн через Tourvisor.
+        Найдите лучшие предложения.
       </p>
 
       <div className="bg-white rounded-3xl overflow-hidden shadow-2xl p-2 md:p-4">

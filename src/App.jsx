@@ -1,5 +1,3 @@
-
-
 export default function TravelAgencyWebsite() {
 
   const tours = [
@@ -33,23 +31,23 @@ export default function TravelAgencyWebsite() {
 
       <header className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
 
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 md:gap-4">
 
             <img
               src="/favicon.png"
               alt="SLAVA TRIPS"
-              className="h-14 w-14 object-cover"
+              className="h-10 w-10 md:h-14 md:w-14 object-cover"
             />
 
             <div>
 
-              <h1 className="text-2xl font-bold tracking-tight">
+              <h1 className="text-xl md:text-2xl font-bold tracking-tight">
                 SLAVA TRIPS
               </h1>
 
-              <p className="text-xs text-gray-500 uppercase tracking-[2px]">
+              <p className="hidden sm:block text-[10px] md:text-xs text-gray-500 uppercase tracking-[2px]">
                 premium travel agency
               </p>
 
@@ -79,7 +77,7 @@ export default function TravelAgencyWebsite() {
 
           <a href="#search">
 
-            <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-2xl text-sm shadow-lg font-semibold">
+            <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-4 md:px-6 py-2 md:py-3 rounded-2xl text-sm shadow-lg font-semibold">
               Подобрать тур
             </button>
 
@@ -92,7 +90,7 @@ export default function TravelAgencyWebsite() {
       {/* HERO */}
 
       <section
-        className="relative h-screen flex items-center justify-center text-center"
+        className="relative min-h-screen pt-28 md:pt-0 flex items-center justify-center text-center"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop')",
@@ -105,17 +103,17 @@ export default function TravelAgencyWebsite() {
 
         <div className="relative z-10 px-6 max-w-5xl text-white">
 
-          <p className="uppercase tracking-[8px] text-sm mb-6 opacity-90">
+          <p className="uppercase tracking-[6px] md:tracking-[8px] text-xs md:text-sm mb-6 opacity-90">
             PREMIUM TRAVEL EXPERIENCE
           </p>
 
-          <h2 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
+          <h2 className="text-4xl md:text-7xl font-bold leading-tight mb-8">
             Путешествия,
             <br />
             которые хочется повторить
           </h2>
 
-          <p className="text-lg md:text-2xl opacity-90 mb-10 max-w-3xl mx-auto">
+          <p className="text-base md:text-2xl opacity-90 mb-10 max-w-3xl mx-auto">
             Подберём лучшие туры, премиальные отели
             и выгодные предложения —
             быстро, удобно и без стресса.
@@ -125,7 +123,7 @@ export default function TravelAgencyWebsite() {
 
             <a href="#search">
 
-              <button className="bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-2xl text-lg font-semibold transition shadow-2xl">
+              <button className="bg-blue-600 hover:bg-blue-700 px-8 md:px-10 py-4 md:py-5 rounded-2xl text-base md:text-lg font-semibold transition shadow-2xl">
                 Подобрать тур
               </button>
 
@@ -137,7 +135,7 @@ export default function TravelAgencyWebsite() {
               rel="noopener noreferrer"
             >
 
-              <button className="bg-black/30 backdrop-blur-md border border-white/20 hover:bg-blue-600 px-10 py-5 rounded-2xl text-lg font-semibold transition">
+              <button className="bg-black/30 backdrop-blur-md border border-white/20 hover:bg-blue-600 px-8 md:px-10 py-4 md:py-5 rounded-2xl text-base md:text-lg font-semibold transition">
                 Связаться
               </button>
 
@@ -151,7 +149,7 @@ export default function TravelAgencyWebsite() {
 
       {/* SEARCH */}
 
-      <section id="search" className="py-24 bg-gray-50 px-6">
+      <section id="search" className="py-20 md:py-24 bg-gray-50 px-4 md:px-6">
 
         <div className="max-w-6xl mx-auto">
 
@@ -161,29 +159,29 @@ export default function TravelAgencyWebsite() {
               ONLINE BOOKING
             </p>
 
-            <h3 className="text-5xl font-bold mb-4">
+            <h3 className="text-4xl md:text-5xl font-bold mb-4">
               Поиск туров
             </h3>
 
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 text-base md:text-lg">
               Найдите лучшие предложения онлайн
             </p>
 
           </div>
 
-          <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+          <div className="bg-white rounded-3xl shadow-2xl p-4 md:p-8 border border-gray-100">
 
-            <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-3xl p-12 text-white text-center">
+            <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-3xl p-8 md:p-12 text-white text-center">
 
               <p className="uppercase tracking-[4px] text-sm opacity-80 mb-4">
                 TOUR SEARCH MODULE
               </p>
 
-              <h4 className="text-4xl font-bold mb-6">
+              <h4 className="text-3xl md:text-4xl font-bold mb-6">
                 Онлайн поиск туров
               </h4>
 
-              <p className="max-w-2xl mx-auto text-lg opacity-90 mb-8">
+              <p className="max-w-2xl mx-auto text-base md:text-lg opacity-90 mb-8">
                 Здесь будет подключён профессиональный модуль поиска туров
                 с актуальными ценами, отелями и онлайн-бронированием.
               </p>
@@ -218,7 +216,7 @@ export default function TravelAgencyWebsite() {
 
       {/* TOURS */}
 
-      <section id="tours" className="py-24 px-6 bg-white">
+      <section id="tours" className="py-20 md:py-24 px-4 md:px-6 bg-white">
 
         <div className="max-w-7xl mx-auto">
 
@@ -228,7 +226,7 @@ export default function TravelAgencyWebsite() {
               ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ
             </p>
 
-            <h3 className="text-5xl font-bold">
+            <h3 className="text-4xl md:text-5xl font-bold">
               Индивидуальные туры
             </h3>
 
@@ -240,10 +238,10 @@ export default function TravelAgencyWebsite() {
 
               <div
                 key={index}
-                className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100"
+                className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 w-full"
               >
 
-                <div className="h-80 overflow-hidden relative">
+                <div className="h-72 md:h-80 overflow-hidden relative">
 
                   <img
                     src={tour.image}
@@ -259,17 +257,17 @@ export default function TravelAgencyWebsite() {
 
                   <div className="flex justify-between items-center mb-5">
 
-                    <h4 className="text-3xl font-bold">
+                    <h4 className="text-2xl md:text-3xl font-bold">
                       {tour.country}
                     </h4>
 
-                    <span className="text-blue-600 font-bold text-lg">
+                    <span className="text-blue-600 font-bold text-base md:text-lg">
                       {tour.price}
                     </span>
 
                   </div>
 
-                  <p className="text-gray-600 mb-7 leading-relaxed">
+                  <p className="text-gray-600 mb-7 leading-relaxed text-base">
                     Премиальные отели, перелёт, трансферы
                     и поддержка 24/7 включены.
                   </p>
@@ -297,10 +295,9 @@ export default function TravelAgencyWebsite() {
         </div>
 
       </section>
+      {/* CUSTOM TOURS */}
 
-{/* CUSTOM TOURS */}
-
-<section className="py-24 px-6 bg-gray-50">
+<section className="py-20 md:py-24 px-4 md:px-6 bg-gray-50">
 
   <div className="max-w-7xl mx-auto">
 
@@ -310,7 +307,7 @@ export default function TravelAgencyWebsite() {
         ИНТЕРЕСНЫЕ НАПРАВЛЕНИЯ
       </p>
 
-      <h3 className="text-5xl font-bold">
+      <h3 className="text-4xl md:text-5xl font-bold leading-tight">
         Индивидуальные путешествия
       </h3>
 
@@ -322,7 +319,7 @@ export default function TravelAgencyWebsite() {
 
       <div className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
 
-        <div className="h-80 overflow-hidden relative">
+        <div className="h-72 md:h-80 overflow-hidden relative">
 
           <img
             src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=1200&auto=format&fit=crop"
@@ -334,15 +331,15 @@ export default function TravelAgencyWebsite() {
 
         </div>
 
-        <div className="p-7 flex flex-col h-[260px]">
+        <div className="p-7 flex flex-col min-h-[260px]">
 
-          <div className="flex justify-between items-center mb-5">
+          <div className="flex justify-between items-center mb-5 gap-4">
 
-            <h4 className="text-3xl font-bold">
+            <h4 className="text-2xl md:text-3xl font-bold">
               Европа
             </h4>
 
-            <span className="text-blue-600 font-bold text-lg">
+            <span className="text-blue-600 font-bold text-base md:text-lg whitespace-nowrap">
               от 120.000₽
             </span>
 
@@ -373,7 +370,7 @@ export default function TravelAgencyWebsite() {
 
       <div className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
 
-        <div className="h-80 overflow-hidden relative">
+        <div className="h-72 md:h-80 overflow-hidden relative">
 
           <img
             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
@@ -385,15 +382,15 @@ export default function TravelAgencyWebsite() {
 
         </div>
 
-        <div className="p-7 flex flex-col h-[260px]">
+        <div className="p-7 flex flex-col min-h-[260px]">
 
-          <div className="flex justify-between items-center mb-5">
+          <div className="flex justify-between items-center mb-5 gap-4">
 
-            <h4 className="text-3xl font-bold">
+            <h4 className="text-2xl md:text-3xl font-bold">
               Океания
             </h4>
 
-            <span className="text-blue-600 font-bold text-lg">
+            <span className="text-blue-600 font-bold text-base md:text-lg whitespace-nowrap">
               от 180.000₽
             </span>
 
@@ -424,7 +421,7 @@ export default function TravelAgencyWebsite() {
 
       <div className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100">
 
-        <div className="h-80 overflow-hidden relative">
+        <div className="h-72 md:h-80 overflow-hidden relative">
 
           <img
             src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop"
@@ -436,15 +433,15 @@ export default function TravelAgencyWebsite() {
 
         </div>
 
-        <div className="p-7 flex flex-col h-[260px]">
+        <div className="p-7 flex flex-col min-h-[260px]">
 
-          <div className="flex justify-between items-center mb-5">
+          <div className="flex justify-between items-center mb-5 gap-4">
 
-            <h4 className="text-3xl font-bold">
+            <h4 className="text-2xl md:text-3xl font-bold">
               Китай
             </h4>
 
-            <span className="text-blue-600 font-bold text-lg">
+            <span className="text-blue-600 font-bold text-base md:text-lg whitespace-nowrap">
               от 95.000₽
             </span>
 
@@ -479,76 +476,76 @@ export default function TravelAgencyWebsite() {
 
 {/* ABOUT */}
 
-      <section id="about" className="py-24 px-6 bg-gray-50">
+<section id="about" className="py-20 md:py-24 px-4 md:px-6 bg-gray-50">
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-          <div>
+    <div>
 
-            <img
-              src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
-              alt="travel"
-              className="rounded-3xl shadow-2xl h-[600px] object-cover w-full"
-            />
+      <img
+        src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
+        alt="travel"
+        className="rounded-3xl shadow-2xl h-[400px] md:h-[600px] object-cover w-full"
+      />
 
-          </div>
+    </div>
 
-          <div>
+    <div>
 
-            <p className="text-blue-600 font-semibold mb-3">
-              WHY US
-            </p>
+      <p className="text-blue-600 font-semibold mb-3">
+        WHY US
+      </p>
 
-            <h3 className="text-5xl font-bold leading-tight mb-8">
-              Путешествуйте
-              <br />
-              легко и красиво
-            </h3>
+      <h3 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
+        Путешествуйте
+        <br />
+        легко и красиво
+      </h3>
 
-            <p className="text-gray-600 text-xl mb-10 leading-relaxed">
-              Мы подбираем лучшие туры, выгодные предложения
-              и комфортный отдых по всему миру.
-            </p>
+      <p className="text-gray-600 text-lg md:text-xl mb-10 leading-relaxed">
+        Мы подбираем лучшие туры, выгодные предложения
+        и комфортный отдых по всему миру.
+      </p>
 
-            <div className="space-y-6">
+      <div className="space-y-6">
 
-              <div className="bg-white p-6 rounded-3xl shadow-md">
+        <div className="bg-white p-6 rounded-3xl shadow-md">
 
-                <h4 className="font-bold text-xl mb-2">
-                  Лучшие цены
-                </h4>
+          <h4 className="font-bold text-xl mb-2">
+            Лучшие цены
+          </h4>
 
-                <p className="text-gray-600">
-                  Находим самые выгодные предложения среди туроператоров.
-                </p>
-
-              </div>
-
-              <div className="bg-white p-6 rounded-3xl shadow-md">
-
-                <h4 className="font-bold text-xl mb-2">
-                  Поддержка 24/7
-                </h4>
-
-                <p className="text-gray-600">
-                  Всегда на связи во время вашего путешествия.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
+          <p className="text-gray-600">
+            Находим самые выгодные предложения среди туроператоров.
+          </p>
 
         </div>
 
-      </section>
+        <div className="bg-white p-6 rounded-3xl shadow-md">
 
-      {/* FOOTER */}
+          <h4 className="font-bold text-xl mb-2">
+            Поддержка 24/7
+          </h4>
+
+          <p className="text-gray-600">
+            Всегда на связи во время вашего путешествия.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* FOOTER */}
 
 <footer
   id="contacts"
-  className="bg-black text-white py-16 px-6"
+  className="bg-black text-white py-16 px-4 md:px-6"
 >
 
   <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
@@ -586,64 +583,64 @@ export default function TravelAgencyWebsite() {
 
     <div>
 
-      <h5 className="font-semibold mb-5 text-lg">
+      <h5 className="font-semibold mb-5 text-3xl md:text-lg">
         Контакты
       </h5>
 
-      <div className="flex gap-4 mt-6">
+      <div className="flex gap-6 mt-6">
 
-  {/* MAX */}
+        {/* MAX */}
 
-  <a
-    href="https://max.ru/u/f9LHodD0cOJnM8N8YPxJckfustxtnJExipYZYwNx6Ovve1t9hTY3GYMyXkE"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-blue-600 transition flex items-center justify-center overflow-hidden"
-  >
+        <a
+          href="https://max.ru/u/f9LHodD0cOJnM8N8YPxJckfustxtnJExipYZYwNx6Ovve1t9hTY3GYMyXkE"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-blue-600 transition flex items-center justify-center overflow-hidden"
+        >
 
-    <img
-      src="/Max_logo_2026.png"
-      alt="MAX"
-      className="w-9 h-9 object-contain"
-    />
+          <img
+            src="/Max_logo_2026.png"
+            alt="MAX"
+            className="w-10 h-10 object-contain"
+          />
 
-  </a>
+        </a>
 
-  {/* TELEGRAM */}
+        {/* TELEGRAM */}
 
-  <a
-    href="https://t.me/slavatrips"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-blue-600 transition flex items-center justify-center overflow-hidden"
-  >
+        <a
+          href="https://t.me/slavatrips"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-blue-600 transition flex items-center justify-center overflow-hidden"
+        >
 
-    <img
-      src="/Telegram_Messenger.png"
-      alt="Telegram"
-      className="w-10 h-10 object-contain"
-    />
+          <img
+            src="/Telegram_Messenger.png"
+            alt="Telegram"
+            className="w-11 h-11 object-contain"
+          />
 
-  </a>
+        </a>
 
-  {/* INSTAGRAM */}
+        {/* INSTAGRAM */}
 
-  <a
-    href="https://instagram.com/slavatrips"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-pink-600 transition flex items-center justify-center overflow-hidden"
-  >
+        <a
+          href="https://instagram.com/slavatrips"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-16 h-16 rounded-full bg-[#071B4A] hover:bg-pink-600 transition flex items-center justify-center overflow-hidden"
+        >
 
-    <img
-      src="/Instagram_icon.png"
-      alt="Instagram"
-      className="w-10 h-10 object-contain"
-    />
+          <img
+            src="/Instagram_icon.png"
+            alt="Instagram"
+            className="w-11 h-11 object-contain"
+          />
 
-  </a>
+        </a>
 
-</div>
+      </div>
 
     </div>
 
@@ -654,6 +651,7 @@ export default function TravelAgencyWebsite() {
   </div>
 
 </footer>
+
     </div>
   );
 }

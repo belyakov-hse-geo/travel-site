@@ -1,4 +1,4 @@
-import { Send, Camera } from "lucide-react";
+import { FaTelegramPlane, FaInstagram } from "react-icons/fa";
 
 export default function TravelAgencyWebsite() {
 
@@ -519,89 +519,104 @@ export default function TravelAgencyWebsite() {
 
       {/* FOOTER */}
 
-      <footer
-        id="contacts"
-        className="bg-black text-white py-16 px-6"
-      >
+<footer
+  id="contacts"
+  className="bg-black text-white py-16 px-6"
+>
 
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
 
-          <div>
+    <div>
 
-            <div className="flex items-center gap-3 mb-5">
+      <div className="flex items-center gap-3 mb-5">
 
-              <img
-                src="/favicon.png"
-                alt="SLAVA TRIPS"
-                className="h-14 w-14 object-cover"
-              />
+        <img
+          src="/favicon.png"
+          alt="SLAVA TRIPS"
+          className="h-14 w-14 object-cover"
+        />
 
-              <div>
+        <div>
 
-                <h4 className="text-2xl font-bold">
-                  SLAVA TRIPS
-                </h4>
+          <h4 className="text-2xl font-bold">
+            SLAVA TRIPS
+          </h4>
 
-                <p className="text-gray-500 text-sm">
-                  premium travel agency
-                </p>
-
-              </div>
-
-            </div>
-
-            <p className="text-gray-400 leading-relaxed max-w-md">
-              Современное турагентство с подбором лучших туров,
-              премиальных отелей и поддержкой 24/7.
-            </p>
-
-          </div>
-
-          <div>
-
-            <h5 className="font-semibold mb-5 text-lg">
-              Контакты
-            </h5>
-
-            <div className="space-y-4 text-gray-400">
-
-              <a
-                href="https://t.me/slavatrips"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-white transition"
-              >
-
-                <Send size={18} />
-                Telegram
-
-              </a>
-
-              <a
-                href="https://instagram.com/slavatrips1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-white transition"
-              >
-
-                <Camera size={18} />
-                Instagram
-
-              </a>
-
-            </div>
-
-          </div>
+          <p className="text-gray-500 text-sm">
+            premium travel agency
+          </p>
 
         </div>
 
-        <div className="border-t border-white/10 mt-14 pt-8 text-center text-gray-500 text-sm">
-          © 2026 SLAVA TRIPS. All rights reserved.
-        </div>
+      </div>
 
-      </footer>
+      <p className="text-gray-400 leading-relaxed max-w-md">
+        Современное турагентство с подбором лучших туров,
+        премиальных отелей и поддержкой 24/7.
+      </p>
 
     </div>
 
+    <div>
+
+      <h5 className="font-semibold mb-5 text-lg">
+        Контакты
+      </h5>
+
+      <div className="flex gap-4 mt-6">
+
+        {/* MAX */}
+
+        <a
+          href="https://max.ru"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center"
+        >
+
+          <span className="text-white font-bold text-sm">
+            MAX
+          </span>
+
+        </a>
+
+        {/* TELEGRAM */}
+
+        <a
+          href="https://t.me/slavatrips"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center"
+        >
+
+          <FaTelegramPlane className="text-white text-2xl" />
+
+        </a>
+
+        {/* INSTAGRAM */}
+
+        <a
+          href="https://instagram.com/slavatrips"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 rounded-full bg-[#0B1635] hover:bg-blue-600 transition flex items-center justify-center"
+        >
+
+          <FaInstagram className="text-white text-2xl" />
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div className="border-t border-white/10 mt-14 pt-8 text-center text-gray-500 text-sm">
+    © 2026 SLAVA TRIPS. Все права защищены.
+  </div>
+
+</footer>
+    </div>
   );
 }

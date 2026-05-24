@@ -1,4 +1,4 @@
-import { Send, Instagram } from "lucide-react";
+import { Send, Camera } from "lucide-react";
 
 export default function TravelAgencyWebsite() {
 
@@ -432,7 +432,7 @@ export default function TravelAgencyWebsite() {
                 className="flex items-center gap-3 hover:text-white transition"
               >
 
-                <Instagram size={18} />
+                <Camera size={18} />
                 Instagram
 
               </a>

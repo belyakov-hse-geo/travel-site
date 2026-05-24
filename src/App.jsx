@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function TravelAgencyWebsite() {
+
+  const [openModal, setOpenModal] = useState(false);
 
   const tours = [
     {
@@ -129,17 +133,12 @@ export default function TravelAgencyWebsite() {
 
             </a>
 
-            <a
-              href="https://t.me/slavatrips"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-
-              <button className="bg-black/30 backdrop-blur-md border border-white/20 hover:bg-blue-600 px-8 md:px-10 py-4 md:py-5 rounded-2xl text-base md:text-lg font-semibold transition">
-                Связаться
-              </button>
-
-            </a>
+            <button
+  onClick={() => setOpenModal(true)}
+  className="bg-black/30 backdrop-blur-md border border-white/20 hover:bg-blue-600 px-8 md:px-10 py-4 md:py-5 rounded-2xl text-base md:text-lg font-semibold transition"
+>
+  Связаться
+</button>
 
           </div>
 
@@ -651,7 +650,61 @@ export default function TravelAgencyWebsite() {
   </div>
 
 </footer>
+{/* CONTACT MODAL */}
 
+{openModal && (
+
+  <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[100] flex items-center justify-center px-6">
+
+    <div className="bg-white rounded-3xl p-8 max-w-sm w-full relative shadow-2xl">
+
+      <button
+        onClick={() => setOpenModal(false)}
+        className="absolute top-4 right-5 text-2xl text-gray-500 hover:text-black"
+      >
+        ×
+      </button>
+
+      <h3 className="text-3xl font-bold mb-8 text-center">
+        Связаться с нами
+      </h3>
+
+      <div className="flex flex-col gap-4">
+
+        <a
+          href="https://t.me/slavatrips"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#229ED9] hover:opacity-90 text-white py-4 rounded-2xl text-center font-semibold transition"
+        >
+          Telegram
+        </a>
+
+        <a
+          href="https://instagram.com/slavatrips"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gradient-to-r from-pink-500 to-orange-400 text-white py-4 rounded-2xl text-center font-semibold transition"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://max.ru/u/f9LHodD0cOJnM8N8YPxJckfustxtnJExipYZYwNx6Ovve1t9hTY3GYMyXkE"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#071B4A] text-white py-4 rounded-2xl text-center font-semibold transition"
+        >
+          MAX
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+)}
     </div>
   );
 }

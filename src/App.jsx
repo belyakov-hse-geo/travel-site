@@ -621,7 +621,7 @@ export default function TravelAgencyWebsite() {
     <img
       src="/Telegram_Messenger.png"
       alt="Telegram"
-      className="w-8 h-8 object-contain"
+      className="w-10 h-10 object-contain"
     />
 
   </a>
@@ -638,7 +638,7 @@ export default function TravelAgencyWebsite() {
     <img
       src="/Instagram_icon.png"
       alt="Instagram"
-      className="w-8 h-8 object-contain"
+      className="w-10 h-10 object-contain"
     />
 
   </a>

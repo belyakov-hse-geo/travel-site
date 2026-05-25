@@ -2,18 +2,18 @@ import { useState, useEffect } from "react";
 
 export default function TravelAgencyWebsite() {
   useEffect(() => {
+  if (document.getElementById("tourvisor-script")) return;
+
   const script = document.createElement("script");
+
   script.src = "https://tourvisor.ru/module/init.js";
   script.async = true;
-script.defer = true;
+  script.defer = true;
+  script.id = "tourvisor-script";
 
   document.body.appendChild(script);
 
-  return () => {
-    document.body.removeChild(script);
-  };
 }, []);
-
   const [openModal, setOpenModal] = useState(false);
 
   const tours = [
@@ -253,13 +253,13 @@ script.defer = true;
                     и поддержка 24/7 включены.
                   </p>
 
-                  <button
+<button
   onClick={() => setOpenModal(true)}
   className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold"
 >
   Смотреть предложения
 </button>
-
+                  
                 </div>
 
               </div>
@@ -325,18 +325,12 @@ script.defer = true;
             Италия, Франция, Швейцария и лучшие маршруты Европы.
           </p>
 
-          <a
-            href="https://t.me/slavatrips"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-auto"
-          >
-
-            <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
-              Подобрать маршрут
-            </button>
-
-          </a>
+         <button
+  onClick={() => setOpenModal(true)}
+  className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold"
+>
+  Смотреть предложения
+</button>
 
         </div>
 
@@ -376,18 +370,12 @@ script.defer = true;
             Бали, Фиджи и райские острова Тихого океана.
           </p>
 
-          <a
-            href="https://t.me/slavatrips"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-auto"
-          >
-
-            <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
-              Подобрать маршрут
-            </button>
-
-          </a>
+          <button
+  onClick={() => setOpenModal(true)}
+  className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold"
+>
+  Смотреть предложения
+</button>
 
         </div>
 
@@ -427,18 +415,12 @@ script.defer = true;
             Шанхай, Пекин и эксклюзивные маршруты по Азии.
           </p>
 
-          <a
-            href="https://t.me/slavatrips"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-auto"
-          >
-
-            <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
-              Подобрать маршрут
-            </button>
-
-          </a>
+          <button
+  onClick={() => setOpenModal(true)}
+  className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold"
+>
+  Смотреть предложения
+</button>
 
         </div>
 

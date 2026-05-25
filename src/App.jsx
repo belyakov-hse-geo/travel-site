@@ -5,6 +5,7 @@ export default function TravelAgencyWebsite() {
   const script = document.createElement("script");
   script.src = "https://tourvisor.ru/module/init.js";
   script.async = true;
+script.defer = true;
 
   document.body.appendChild(script);
 
@@ -252,17 +253,12 @@ export default function TravelAgencyWebsite() {
                     и поддержка 24/7 включены.
                   </p>
 
-                  <a
-                    href="https://t.me/slavatrips"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-
-                    <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold">
-                      Смотреть предложения
-                    </button>
-
-                  </a>
+                  <button
+  onClick={() => setOpenModal(true)}
+  className="w-full bg-gray-900 hover:bg-blue-600 text-white py-4 rounded-2xl transition font-semibold"
+>
+  Смотреть предложения
+</button>
 
                 </div>
 

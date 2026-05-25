@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export default function TravelAgencyWebsite() {
   useEffect(() => {
   const script = document.createElement("script");
-  script.src = "//tourvisor.ru/module/init.js";
+  script.src = "https://tourvisor.ru/module/init.js";
   script.async = true;
 
   document.body.appendChild(script);

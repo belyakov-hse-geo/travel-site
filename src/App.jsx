@@ -1,6 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 
+const publicUrl = (path) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
 export default function TravelAgencyWebsite() {
   useEffect(() => {
   if (document.getElementById("tourvisor-script")) return;
@@ -53,7 +56,7 @@ export default function TravelAgencyWebsite() {
           <div className="flex items-center gap-3 md:gap-4">
 
             <img
-              src="/favicon.png"
+              src={publicUrl("favicon.png")}
               alt="SLAVA TRIPS"
               className="h-10 w-10 md:h-14 md:w-14 object-cover"
             />
@@ -514,7 +517,7 @@ export default function TravelAgencyWebsite() {
       <div className="flex items-center gap-3 mb-5">
 
         <img
-          src="/favicon.png"
+          src={publicUrl("favicon.png")}
           alt="SLAVA TRIPS"
           className="h-14 w-14 object-cover"
         />
@@ -558,7 +561,7 @@ export default function TravelAgencyWebsite() {
         >
 
           <img
-            src="/Max_logo_2026.png"
+            src={publicUrl("Max_logo_2026.png")}
             alt="MAX"
             className="w-10 h-10 object-contain"
           />
@@ -575,7 +578,7 @@ export default function TravelAgencyWebsite() {
         >
 
           <img
-            src="/Telegram_Messenger.png"
+            src={publicUrl("Telegram_Messenger.png")}
             alt="Telegram"
             className="w-11 h-11 object-contain"
           />
@@ -592,7 +595,7 @@ export default function TravelAgencyWebsite() {
         >
 
           <img
-            src="/Instagram_icon.png"
+            src={publicUrl("Instagram_icon.png")}
             alt="Instagram"
             className="w-11 h-11 object-contain"
           />
